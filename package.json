@@ -21,6 +21,10 @@
   "dependencies": {
     "json-schema-create": "1.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GameSquatch/json-editor.git"
+  },
   "devDependencies": {
     "@tsconfig/recommended": "^1.0.8",
     "@types/chai": "^5.0.1",
