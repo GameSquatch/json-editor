@@ -1,14 +1,16 @@
 {
-  "name": "json-editor",
-  "version": "0.0.1",
+  "name": "json-html-editor",
+  "version": "0.0.2",
   "description": "A basic native HTML and JS solution to JSON editing",
   "main": "index.js",
   "type": "module",
-  "files": ["/dist"],
+  "files": [
+    "/dist"
+  ],
   "scripts": {
-    "build": "npx tsc",
+    "build": "npx vite build && npx tsc --emitDeclarationOnly",
     "test": "npx mocha",
-    "buildTest": "npx tsc && npx mocha"
+    "buildTest": "npm run build && npx mocha"
   },
   "keywords": [
     "json",
@@ -34,6 +36,7 @@
     "chai": "^5.2.0",
     "jsdom": "^26.0.0",
     "mocha": "^11.1.0",
-    "typescript": "^5.7.3"
+    "typescript": "^5.7.3",
+    "vite": "^6.2.2"
   }
 }
